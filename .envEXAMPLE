@@ -1,0 +1,6 @@
+TOKEN=token
+PREFIX=/
+BD_HOST=host
+BD_LOGIN=user
+BD_PASS=pass
+BD_DATABASE=db
