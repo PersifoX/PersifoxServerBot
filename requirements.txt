@@ -1,0 +1,5 @@
+disnake
+colorama
+mysql-connector-python
+python-dotenv
+mctools
