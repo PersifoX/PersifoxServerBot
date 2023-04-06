@@ -1,0 +1,22 @@
+{
+    "commands" : {
+        "permissions" : {
+
+        },
+        "guild_ids" : {
+
+        },
+        "description" : {
+
+        },
+        "help" : {
+
+        },
+        "" : {
+
+        }
+    },
+    "errors" : {
+        "BadArgument" : ""
+    }
+}
