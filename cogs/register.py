@@ -16,14 +16,16 @@ sql = "INSERT INTO " + getenv("TABLE") + " (username, password, discordid) VALUE
 
 print(getenv("USER"))
 
-mydb = mysql.connector.connect(
+async def contodb():
+  mydb = mysql.connector.connect(
   host=getenv("HOST"),
   user="bot",
   password=getenv("PASS"),
   database=getenv("DB")
-)
+  )
+  
+  mycursor = mydb.cursor()
 
-mycursor = mydb.cursor()
 
 tool = tools.Embed()
 
@@ -73,6 +75,9 @@ class MyModal(disnake.ui.Modal):
         
 
         try:
+          
+            await contodb()
+            
             mycursor.execute(sql, val)
 
             mydb.commit()
